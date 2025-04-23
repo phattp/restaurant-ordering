@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jimmy's Diner</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Jimmy's Diner</h1>
+      <p class="slogan-p">The best burgers and pizzas in town.</p>
+    </header>
+    <main>
+      <section id="menu-section"></section>
+      <section class="your-order-section" id="your-order-section"></section>
+      <section class="modal" id="modal">
+        <div class="modal-content" id="modal-content">
+          <h2 class="form-h2">Enter Card Details</h2>
+          <form id="payment-form">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              aria-label="name"
+              required
+            />
+            <input
+              type="text"
+              name="card"
+              placeholder="Enter card number"
+              aria-label="card-number"
+              required
+            />
+            <input
+              type="text"
+              name="cvv"
+              placeholder="Enter CVV"
+              aria-label="cvv"
+              required
+            />
+            <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
